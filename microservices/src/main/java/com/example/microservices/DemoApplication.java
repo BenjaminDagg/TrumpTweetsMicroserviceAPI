@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.example.microservices.trump"})
+
 public class DemoApplication {
 
 	@RequestMapping("/")
