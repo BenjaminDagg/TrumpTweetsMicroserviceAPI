@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@SpringBootApplication(scanBasePackages = {"com.example.microservices.trump"})
+@SpringBootApplication(scanBasePackages = {"com.example.microservices.trump", "com.example.microservices.tweets"})
+
 
 public class DemoApplication {
 
