@@ -3,6 +3,7 @@ package com.example.microservices.trump.web;
 public class TrumpWebResult {
 	private String id;
 	private String name;
+	private String apiUrl;
 	
 	public String getId() {
 		return id;
@@ -18,5 +19,13 @@ public class TrumpWebResult {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getApiUrl() {
+		return apiUrl;
+	}
+
+	public void setApiUrl(String apiUrl) {
+		this.apiUrl = apiUrl;
 	}
 }
