@@ -18,8 +18,6 @@ public class TrumpWeb {
 	@ResponseBody
 	TrumpWebResult trump() {
 		TrumpWebResult trumpRes = new TrumpWebResult();
-		trumpRes.setId("1");
-		trumpRes.setName("trump");
 		trumpRes.setApiUrl(trumpApiUrl);
 		return trumpRes;
 	}
