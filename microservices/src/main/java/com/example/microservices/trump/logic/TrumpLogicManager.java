@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 public class TrumpLogicManager {
-	@Value("${trumpApiUrl}")
+	@Value("${trumpApiUrl:}")
 	private String trumpApiUrl;
 	@Value("${trumpApiKey:}")
 	private String trumpApiKey;
