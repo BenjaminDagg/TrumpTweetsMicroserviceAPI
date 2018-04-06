@@ -1,6 +1,10 @@
 # Trump Tweets API
 This project implements a REST API for the Trump Tweets angular app. The API has 2 microservices: one which gets an image of Donald Trump from Getty Images API, and another which uses Twitter API to get a random tweet by Donald Trump.
 
+## Heroku
+
+[Heroku deployment link](https://homework4-bdagg.herokuapp.com/)
+
 ## Theme
 The theme of the Trump Tweets app is making Donald Trump look stupid by showing his famous tweets and an image of him.
 
