@@ -19,11 +19,11 @@ public class TrumpLogicManager {
 	public String getImageUrl() {
 		
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("Api-Key", trumpApiKey);
+		headers.add("Api-Key", "634j7nbv94yuukxty9d66cgb");
 		
 		HttpEntity<String> request = new HttpEntity<String>(headers);
 		
-		String apiUrl = trumpApiUrl;
+		String apiUrl = "https://api.gettyimages.com/v3/search/images?fields=id,title,comp,referral_destinations&sort_order=best&phrase=trump";
 		RestTemplate rest = new RestTemplate();
 		ResponseEntity<String> response = rest.exchange(apiUrl, HttpMethod.GET, request, String.class);
 		
