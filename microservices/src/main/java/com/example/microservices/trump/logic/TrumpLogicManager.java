@@ -16,7 +16,7 @@ public class TrumpLogicManager {
 	private String trumpApiTags;
 	
 	
-	public String getImageUrl() {
+	public ResponseEntity<String> getImageUrl() {
 		
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Api-Key", "634j7nbv94yuukxty9d66cgb");
@@ -27,6 +27,6 @@ public class TrumpLogicManager {
 		RestTemplate rest = new RestTemplate();
 		ResponseEntity<String> response = rest.exchange(apiUrl, HttpMethod.GET, request, String.class);
 		
-		return  response.getBody();
+		return  response;
 	}
 }
