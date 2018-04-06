@@ -12,11 +12,7 @@ public class TrumpWeb {
 	
 	TrumpLogicManager manager = new TrumpLogicManager();
 	
-	@Value("${trumpApiUrl:default.trump.url}")
-	private String trumpApiUrl;
 	
-	@Value("${trumpApiKey:123456}")
-	private String trumpApiKey;
 
 	@RequestMapping("/trump")
 	@ResponseBody

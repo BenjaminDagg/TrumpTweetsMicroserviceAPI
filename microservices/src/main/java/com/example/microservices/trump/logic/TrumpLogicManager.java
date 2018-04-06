@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 public class TrumpLogicManager {
-	@Value("${trumpApiUrl:https://api.gettyimages.com/v3/search/images?fields=id,title,comp,referral_destinations&sort_order=best&phrase=trump}")
+	@Value("${trumpApiUrl}")
 	private String trumpApiUrl;
 	@Value("${trumpApiKey}")
 	private String trumpApiKey;
