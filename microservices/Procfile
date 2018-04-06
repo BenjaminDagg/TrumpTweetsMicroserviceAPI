@@ -1,2 +1,0 @@
-web: java -Dspring.trumpApiUrl=${trumpApiUrl} -jar target/microservices-0.0.1-SNAPSHOT.jar
-web: java -Dspring.trumpApiKey=${trumpApiKey} -jar target/microservices-0.0.1-SNAPSHOT.jar
