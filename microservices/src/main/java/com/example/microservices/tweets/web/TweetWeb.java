@@ -11,8 +11,7 @@ public class TweetWeb {
 	@ResponseBody
 	TweetWebResult tweets() {
 		TweetWebResult tweetRes = new TweetWebResult();
-		tweetRes.setId("2");
-		tweetRes.setName("tweet");
+		
 		tweetRes.setUrl("stub.url");
 		return tweetRes;
 	}

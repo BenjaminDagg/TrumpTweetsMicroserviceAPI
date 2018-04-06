@@ -5,8 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.microservices.trump.logic.TrumpLogicManager;
+
 @RestController
 public class TrumpWeb {
+	
+	TrumpLogicManager manager = new TrumpLogicManager();
 	
 	@Value("${trumpApiUrl:default.trump.url}")
 	private String trumpApiUrl;
@@ -17,8 +21,9 @@ public class TrumpWeb {
 	@RequestMapping("/trump")
 	@ResponseBody
 	TrumpWebResult trump() {
+		String result = manager.getImageUrl();
 		TrumpWebResult trumpRes = new TrumpWebResult();
-		trumpRes.setApiUrl(trumpApiUrl);
+		trumpRes.setApiUrl(result);
 		return trumpRes;
 	}
 }
