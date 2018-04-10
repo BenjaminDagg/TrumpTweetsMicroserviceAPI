@@ -19,7 +19,7 @@ public class TrumpLogicManager {
 	public ResponseEntity<String> getImageUrl() {
 		
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("Api-Key", "634j7nbv94yuukxty9d66cgb");
+		headers.add("Api-Key", "ah3677qn6rfhesdjud9kmtsc");
 		
 		HttpEntity<String> request = new HttpEntity<String>(headers);
 		
