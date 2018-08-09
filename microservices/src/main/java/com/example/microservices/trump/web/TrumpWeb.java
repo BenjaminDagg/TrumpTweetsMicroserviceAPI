@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.microservices.trump.logic.TrumpLogicManager;
 
-@CrossOrigin
+
 @RestController
 public class TrumpWeb {
 	
