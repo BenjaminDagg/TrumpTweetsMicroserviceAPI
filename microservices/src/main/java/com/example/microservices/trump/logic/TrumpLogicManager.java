@@ -26,8 +26,7 @@ public class TrumpLogicManager {
 		String apiUrl = "https://api.gettyimages.com/v3/search/images?fields=id,title,comp,referral_destinations&sort_order=best&phrase=trump";
 		RestTemplate rest = new RestTemplate();
 		ResponseEntity<String> response = rest.exchange(apiUrl, HttpMethod.GET, request, String.class);
-		response.setHeader("Access-Control-Allow-Headers", "Authorization, Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, " +
-                "Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+		
 		
 		return  response;
 	}
