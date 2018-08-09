@@ -20,6 +20,7 @@ public class TrumpLogicManager {
 		
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Api-Key", "ah3677qn6rfhesdjud9kmtsc");
+		headers.add("Access-Control-Allow-Origin", "*");
 		
 		HttpEntity<String> request = new HttpEntity<String>(headers);
 		
